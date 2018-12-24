@@ -1,0 +1,36 @@
+﻿@page
+@model ContactModel
+@{
+    ViewData["Title"] = "Contact";
+}
+<br />
+<h2>@ViewData["Title"]</h2>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md">
+            <h3>Contact Details</h3>
+            <address>
+                Rothbury Drive<br />
+                Ashington<br />
+                Northumberland<br />
+                NE63 8TJ
+            </address>
+
+            <address>
+                <a class="btn btn-light" href="tel:0191%204605070">
+                    <strong>📞 07732439335</strong>
+                </a>
+                <br /><br />
+                <a class="btn btn-light" href="mailto:robin.wilson@rwsservices.net?Enquiry%20about%2061%20Rothbury%20Drive">
+                    <strong>📧 robin.wilson@rwsservices.net</strong>
+                </a>
+            </address>
+        </div>
+
+        <div class="col-md">
+            <h3>Map</h3>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2277.7830859074447!2d-1.5967940838556265!3d55.18706398040577!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487e0c45c5fdd6e7%3A0x2ec759288ad34945!2sRothbury+Dr%2C+Ashington+NE63+8TJ!5e0!3m2!1sen!2suk!4v1522370685370" class="iframeMap" allowfullscreen></iframe>
+        </div>
+    </div>
+</div>

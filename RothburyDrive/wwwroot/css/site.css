@@ -1,0 +1,41 @@
+body {
+    background-color: #f7f7f7 !important;
+}
+
+.body-content {
+    background-color: #fff !important;
+    margin-bottom: 20px;
+}
+
+.container h2 {
+    color: #343a40;
+    font-family: 'Black Han Sans', sans-serif;
+}
+
+.container h3 {
+    color: #9a9da0;
+    margin-bottom: 20px;
+}
+
+.carousel {
+    padding-top: 10px;
+}
+
+.carousel-caption h3 {
+    text-shadow: 2px 2px 4px #000;
+    color: #2ECC40;
+}
+
+.carousel-caption h5 {
+    text-shadow: 2px 2px 4px #000;
+}
+
+.iframeMap {
+    width: 100%;
+    height: 450px;
+    border: 0px;
+}
+
+.gallery .img-thumbnail {
+    margin-bottom: 30px;
+}

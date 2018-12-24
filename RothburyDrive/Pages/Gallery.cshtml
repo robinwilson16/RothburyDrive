@@ -1,0 +1,32 @@
+﻿@page
+@model RothburyDrive.Pages.GalleryModel
+@{
+    ViewData["Title"] = "Gallery";
+}
+
+<br />
+<h2>@ViewData["Title"]</h2>
+<h3>@Model.Message</h3>
+
+<div class="container gallery">
+    <div class="row">
+        <a href="~/images/gallery01.jpg" data-toggle="lightbox" data-gallery="RothburyGallery" class="col-sm-6 col-md-3" data-title="Front of the property" data-footer="Rothbury Drive @@ NE63 8TJ">
+            <img src="~/images/gallery01.jpg" class="img-fluid img-thumbnail">
+        </a>
+        <a href="~/images/gallery02.jpg" data-toggle="lightbox" data-gallery="RothburyGallery" class="col-sm-6 col-md-3" data-title="Rear of the property" data-footer="Rothbury Drive @@ NE63 8TJ">
+            <img src="~/images/gallery02.jpg" class="img-fluid img-thumbnail">
+        </a>
+        <a href="~/images/gallery03.jpg" data-toggle="lightbox" data-gallery="RothburyGallery" class="col-sm-6 col-md-3" data-title="Back garden" data-footer="Rothbury Drive @@ NE63 8TJ">
+            <img src="~/images/gallery03.jpg" class="img-fluid img-thumbnail">
+        </a>
+        <a href="~/images/gallery04.jpg" data-toggle="lightbox" data-gallery="RothburyGallery" class="col-sm-6 col-md-3" data-title="Kitchen" data-footer="Rothbury Drive @@ NE63 8TJ">
+            <img src="~/images/gallery04.jpg" class="img-fluid img-thumbnail">
+        </a>
+        <a href="~/images/gallery05.jpg" data-toggle="lightbox" data-gallery="RothburyGallery" class="col-sm-6 col-md-3" data-title="Conservatory" data-footer="Rothbury Drive @@ NE63 8TJ">
+            <img src="~/images/gallery05.jpg" class="img-fluid img-thumbnail">
+        </a>
+        <a href="~/images/gallery06.jpg" data-toggle="lightbox" data-gallery="RothburyGallery" class="col-sm-6 col-md-3" data-title="Bathroom" data-footer="Rothbury Drive @@ NE63 8TJ">
+            <img src="~/images/gallery06.jpg" class="img-fluid img-thumbnail">
+        </a>
+    </div>
+</div>

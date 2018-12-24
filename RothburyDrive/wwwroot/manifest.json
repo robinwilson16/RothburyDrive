@@ -1,0 +1,23 @@
+﻿{
+  "lang": "en",
+  "dir": "ltr",
+  "name": "61 Rothbury Drive @@ NE63 8TJ",
+  "short_name": "61 Rothbury Drive",
+  "icons": [
+    {
+      "src": "/favicon.png",
+      "sizes": "256x256",
+      "type": "image/png"
+    },
+    {
+      "src": "/favicon-1024.png",
+      "sizes": "1024x1024",
+      "type": "image/png"
+    }
+  ],
+  "theme_color": "#9a9da0",
+  "background_color": "#343a40",
+  "start_url": "/",
+  "display": "standalone",
+  "orientation": "natural"
+}
