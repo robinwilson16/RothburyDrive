@@ -15,44 +15,43 @@
         <link rel="stylesheet" href="~/css/site.css" />
     </environment>
     <environment exclude="Development">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css"
+        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css"
               asp-fallback-href="~/lib/twitter-bootstrap/css/bootstrap.min.css"
               asp-fallback-test-class="sr-only" asp-fallback-test-property="position" asp-fallback-test-value="absolute" />
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.0/css/all.css"
-              integrity="sha384-aOkxzJ5uQz7WBObEZcHvV5JvRW3TUc2rNPA7pe3AwnsUohiw1Vj2Rgx2KSOkF5+h"
+        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css"
               crossorigin="anonymous"
               asp-fallback-href="~/lib/font-awesome/css/all.min.css"
               asp-fallback-test-class="sr-only" asp-fallback-test-property="position" asp-fallback-test-value="absolute" />
-        <link rel="stylesheet" href="~/lib/ekko-lightbox/ekko-lightbox.css" asp-append-version="true" />
+        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css" asp-append-version="true" />
         <link rel="stylesheet" href="~/css/site.min.css" asp-append-version="true" />
     </environment>
 
-    <link href="https://fonts.googleapis.com/css?family=Black+Han+Sans" rel="stylesheet">
+    <link href="//fonts.googleapis.com/css?family=Black+Han+Sans" rel="stylesheet">
 </head>
 <body>
     <nav id="#TopNavBar" class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
         <div class="container">
-            <a class="navbar-brand" asp-page="/Index">🏡 Rothbury Drive @@ NE63 8TJ</a>
+            <a class="navbar-brand" asp-page="/Index"><i class="fas fa-home"></i> Rothbury Drive @@ NE63 8TJ</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="btn btn-dark" asp-page="/Index">Home</a>
+                        <a class="btn btn-dark" asp-page="/Index"><i class="fas fa-angle-right"></i> Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="btn btn-dark" asp-page="/Gallery">Gallery</a>
+                        <a class="btn btn-dark" asp-page="/Gallery"><i class="fas fa-angle-right"></i> Gallery</a>
                     </li>
                     <li class="nav-item">
-                        <a class="btn btn-dark" asp-page="/Contact">Contact</a>
+                        <a class="btn btn-dark" asp-page="/Contact"><i class="fas fa-angle-right"></i> Contact</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <partial name="_CookieConsentPartial" />
+    @*<partial name="_CookieConsentPartial" />*@
 
     <div class="container body-content">
         @RenderBody()
@@ -61,7 +60,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-sm">
-                        <p>&copy; 2018 - Rothbury Drive</p>
+                        <p>&copy; 2018-2019 - Rothbury Drive</p>
                     </div>
                     <div class="col-sm text-right">
                         <p>Design by <a href="https://www.rwsservices.net" target="_blank" rel="noopener">RWS Services</a></p>
@@ -79,22 +78,17 @@
         <script src="~/js/site.js" asp-append-version="true"></script>
     </environment>
     <environment exclude="Development">
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"
                 asp-fallback-src="~/lib/jquery/jquery.min.js"
                 asp-fallback-test="window.jQuery"
                 crossorigin="anonymous">
         </script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/popper.min.js"
-                asp-fallback-src="~/lib/popper/popper.min.js"
-                asp-fallback-test="window.jQuery && window.jQuery.fn && window.jQuery.fn.modal"
-                crossorigin="anonymous">
-        </script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.min.js"
+        <script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.bundle.min.js"
                 asp-fallback-src="~/lib/twitter-bootstrap/js/bootstrap.min.js"
                 asp-fallback-test="window.jQuery && window.jQuery.fn && window.jQuery.fn.modal"
                 crossorigin="anonymous">
         </script>
-        <script src="~/lib/ekko-lightbox/ekko-lightbox.min.js" asp-append-version="true"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js" asp-append-version="true"></script>
         <script src="~/js/site.min.js" asp-append-version="true"></script>
     </environment>
 

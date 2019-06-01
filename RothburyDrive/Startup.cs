@@ -58,6 +58,17 @@ namespace RothburyDrive
                 app.UseHsts();
             }
 
+            //Avoid CORS errors with JS files served over CDN
+            app.UseCors(builder => builder.WithOrigins(
+                "http://www.rothburydrive.co.uk",
+                "https://www.rothburydrive.co.uk",
+                "http://rothburydrive.co.uk",
+                "https://rothburydrive.co.uk"
+                )
+                .AllowAnyMethod()
+                .AllowAnyHeader()
+            );
+
             app.UseHttpsRedirection();
             app.UseStaticFiles();
             app.UseCookiePolicy();
